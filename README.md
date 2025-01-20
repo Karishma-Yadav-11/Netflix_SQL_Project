@@ -178,7 +178,7 @@ SELECT title,
 	   CASE
 	   		WHEN description ILIKE '%Kill%' OR description ILIKE '%Violence%' THEN 'Bad_content'
 			ELSE 'Good_content'
-		END AS Category, description
+		END AS Category
 FROM netflix
 )
 
@@ -196,3 +196,5 @@ GROUP BY 1;
 * **Content Categorization:** Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
   
 This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
+
+**Thank you** 
